@@ -171,7 +171,53 @@ function lookForAttributes(lastName, prop){
 answer = lookForAttributes("Ktorou", "favouriteAnime");
 console.log(answer);
 
+function maxOfThree(number1, number2, number3){
+	if(number1 > number2 && number1 > number3){
+		return number1;
+	}
+	else if (number2 > number1 && number2 > number3){
+		return number2;
+	}
+	else if (number3 > number1 && number3 > number2){
+		return number3;
+	}
+}
 
+var result = maxOfThree(2000,60,40);
+console.log(result);
+
+
+function test(){
+	var string = "e";
+
+	var vowel = ["a", "e", "i", "o", "u"];
+
+	for(i=0; i<vowel.length; i++){
+		if(string === vowel[i]){
+			return true;
+		}
+	}
+	return false;
+}
+
+var result = test();
+console.log(result);
+
+function tellingTime(){
+	var currentTime = new Date();
+	var hours = currentTime.getHours();
+	var minutes = currentTime.getMinutes();
+	var seconds = currentTime.getSeconds();
+
+	var clockDiv = document.getElementById("clock"); 
+
+	var result = clockDiv.innerText = hours +":"+minutes +":"+ seconds;
+
+	return result;
+}
+
+var timeResult = tellingTime();
+console.log(timeResult);
 
 /////////////////////////////////////////////////////
 ////////////////////  jQuery ////////////////////////
