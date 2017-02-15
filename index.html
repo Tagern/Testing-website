@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,30 @@
 	<title>Testing</title>
 </head>
 <body>
+
+	<div class="container">
+		<div class="overlay"></div>
+		<div class="two-sections">
+			<div class="left-section">
+				<div class="left-content">
+					<h1>This is the left side title</h1>
+					<h2>This is the left subheading</h2>
+					<p>This is content number 1</p>
+					<p>This is content number 2</p>
+					<p>This is content number 3</p>
+				</div>
+			</div>
+			<div class="right-section">
+				<div class="right-content">
+					<h1>This is the right side title</h1>
+					<h2>This is the right subheading</h2>
+					<p>This is content number 1</p>
+					<p>This is content number 2</p>
+					<p>This is content numebr 3</p>
+				</div>
+			</div>
+		</div>
+
 
 	<h1>LOL333</h1>
 	<h2>hello</h2>
@@ -58,9 +82,34 @@
 		<button id="jsButton">CLICK ME PLEASE</button>
 	</form>
 
+<!-- Angular example  -->
+	<div data-ng-app="">
+		<p>Enter stuff into the input: <input type="text" data-ng-model="name"></p>
+		<p data-ng-bind="name"></p>
+	</div>
 
+	<div ng-app="">
+		<p>Enter a colour: <input type="text" style="background-color:{{myColor}}" ng-model="myColor" value={{myColor}}>
+	</div>
+
+	<button id="ajaxTest">Click me</button>
+	<div id="demoAjaxText"></div>
+	<div id="ajaxArrayText"></div>
+
+	<div id="modTest" class="groupedBoxes">
+		<div class="boxClass"></div>
+		<div class="boxClass"></div>
+		<div class="boxClass"></div>
+		<div class="boxClass"></div>
+	</div>
+
+</div>
 <!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 	<script src="src/scripts/main.js"></script>
+
 
 </body>
 </html>
